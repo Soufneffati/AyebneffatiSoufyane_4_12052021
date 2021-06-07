@@ -1,57 +1,67 @@
-<!doctype html>
-<!--<html lang="Default">-->
-	<html lang="fr"></html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="seo, google, site web, site internet, agence design lyon,agence design"><!--Ajout keywords-->
-    <meta name="description" content="Agence de web design à Lyon"><!--Ajout métadescriptionn-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="shortcut icon" type="image/png" href="favicon.jpg">
-    
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css"><!--Retrait min.css Erreur 404-->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-STXLDQKB09');
+</script>
+	<title>La chouette agence de web design</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="L'entreprise de web design, la chouette agence située à Lyon aide les entreprises à devenir attractives et visibles sur Internet.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+	<meta name="googlebot" content="index,follow">
+		<!-- End balises meta -->
+		<!-- Balise link -->
+	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css"><!--Retrait min.css-->
-	<!--retrait<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">-->
-	
-    <title>Contactez-nous</title>
-
-	<!--Retrait balises script<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>-->
-    <!--Modif nom de page<title>page2</title>-->
-
-    
-<!-- Analytics -->
- 
-<!-- Analytics END -->
-    
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
+		<!-- End balises link -->
+		<!-- Balises script -->
+	<script src="./js/jquery-2.1.0.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/blocs.js"></script>
+	<script src="./js/jquery.touchSwipe.js" defer></script>
+	<script src="./js/gmaps.js"></script>
+		<!-- End Balises script -->
 </head>
 <body>
+	
 <!-- Principal conteneur -->
 <div class="page-container">
     
 <!-- bloc-0 -->
 <div class="bloc bgc-white l-bloc " id="bloc-0">
 	<div class="container bloc-sm">
+
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="Lyon web design logo" height="30" /></a>
+				<!--rm div keywords-->
+				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="paris web design logo agence web meilleure agence"/></a>
+				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 			</div>
-				<!--<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-				</button>-->
-			
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
 					<li>
 						<a href="index.html">Accueil</a>
 					</li>
+					<!--rm balise li superflux-->
+					<!--change pages for contact-->
 					<li>
-					</li>
-					<li>
-						<a href="contact.html">Contactez-nous</a>
+						<a href="contact.html">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -59,6 +69,7 @@
 	</div>
 </div>
 <!-- bloc-0 END -->
+
 
 <!-- bloc-6 -->
 <div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
@@ -83,36 +94,49 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+
+				<!-- rm novalidate success-msg and fail-msg-->
+				<form id="form_1" action="input-form-to-contact" method="get">
 					<div class="form-group">
-						<!--Introduction balise Label-->
-						<label for="name">Nom</label>					
-						<input id="name" class="form-control" required />
+						<label for="name">Nom</label> <br>
+						<input id="name" name="name" class="form-control" type="text" aria-invalid="false">						<div class="help-block"></div>
 					</div>
 					<div class="form-group">
-						<!--Introduction balise Label-->
-						<label for="email">Adresse email</label>
-						<input id="email" class="form-control" type="email" required />
+						<label for="email">
+							Adresse email
+						</label> <br>
+						<input id="email" name="email" class="form-control" type="email" required="" autofocus="" aria-invalid="false" >
+					<div class="help-block">
 					</div>
-					<div class="form-group">
-						<!--Introduction balise Label-->
-						<label for="form-control">Comment nous avez-vous connu ?</label>
-						<input class="form-control" type="email" required id="input_504" />
-					</div>
-					<div class="form-group">
-						<!--Introduction balise Label-->
-						<label for="message">Brief de votre projet (Ajoutez autant de détails que nécessaire)<br></label>
-						<textarea id="message" class="message" rows="4" cols="50" required></textarea>
-					</div> 
+				  </div>
+				  <div class="form-group">
+					<label for="info"> Comment nous avez-vous connus ?</label> <br>
+					<select name="info" id="info">
+						<option value="connaissance">Part une connaissance.</option>
+						<option value="web" selected="">En navigant sur Internet.</option>
+						<option value="réseaux sociaux">En surfant sur les réseaux sociaux.</option>
+					</select>
+				
+				</div>
+				<div class="form-group">
+					<label for="message">
+						Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
+					</label> <br>
+					<textarea id="message" name="message" class="form-control" minlength="10" rows="4" cols="50" required="">										</textarea>
+				<div class="help-block"></div></div>
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
 					</button>
 				</form>
 			</div>
-			<div class="col-sm-12">
-				<p>
-					contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+			<div class="col-sm-6 contact">
+				<p class="lk">
+					<a href="mailto:contact@lachouetteagence.com">contact@lachouetteagence.com</a>
+					<a href="https://www.google.com/maps/place/2+Place+Sathonay,+69001+Lyon/@45.7695241,4.8279786,17z/data=!3m1!4b1!4m5!3m4!1s0x47f4eb020f3664e9:0x13e3d71752922c1f!8m2!3d45.7695241!4d4.8301673">2 place Sathonay 69001 Lyon
+					</a>
 				</p>
+					<p class="horaire">Ouvert de 9h à 18h, du lundi au vendredi</p>
+			
 			</div>
 		</div>
 	</div>
@@ -128,49 +152,34 @@
 <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm">
 		<div class="row">
-			<div class="col-sm-12" style="color: rgb(28, 28, 28); background-color: rgb(243, 151, 108)"> <!--Ajout style color-->
-				<p class="text-center white">
+			<div class="col-sm-12">
+				<p class="text-center">
 					La chouette agence - Agence web basée à Lyon.<br>
 				</p>
 				<div class="row row-no-gutters social">
+					<!--col xs pour garder le display en mobile-->
 					<div class="col-sm-3">
-
 						<div class="text-center">
-							<a class="social" href="https://twitter.com"><span class="fa fa-twitter icon-md"><span class="sr-only">Twitter</span></span></a>
+							<a aria-label="twitter" class="social" href="https://twitter.com"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.facebook.com"><span class="fa fa-facebook icon-md"><span class="sr-only">Facebook</span></span></a>
+							<a aria-label="facebook" class="social" href="https://facebook.fr"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://fr.linkedin.com"><span class="fa fa-dribbble icon-md"><span class="sr-only">Linkedin</span></span></a>
+							<a aria-label="dribbble" class="social" href="http://dribbble.com"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.instagram.com"><span class="fa fa-instagram icon-md"><span class="sr-only">Instagram</span></span></a>
-							
-							<!--<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+							<a aria-label="instagram" class="social" href="http://instagram.com"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>-->
-						</div>
-					</div>
+					<!--rm keywords-->
+				</div>
 				</div>
 			</div>
 		</div>
@@ -178,9 +187,13 @@
 </div>
 <!-- Footer - bloc-8 END -->
 
-</div>
 <!-- Principal conteneur END -->
     
-
+<script src="https://kit.fontawesome.com/406da18a0b.js" crossorigin="anonymous" defer >
+</script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZDTLV9"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 </body>
 </html>
